@@ -1,0 +1,59 @@
+@font-face {
+    font-family:"Giver Made" ;
+    src: url("/fontsAndStuff/giver_made/Giver\ Made\ Italic.ttf");
+}
+
+header{
+    height: 80px;
+}
+.header_in{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_in > h1{
+    font-family: "Giver Made";
+    font-size: 50px;
+}
+
+main{
+    margin-top: 10px;
+}
+
+.footer_info{
+    margin-bottom: 0px;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-around;
+}
+.black{
+    background: black;
+}
+
+.integrantes > h3{
+    margin-left: 20px;
+}
+
+.integrantes > ul > li{
+    list-style: none;
+}
+
+.integrantes > ul > li{
+    list-style: none;
+}
+
+.text_and_image{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.images_center{
+    display: flex;
+    justify-content: center;
+}
+  

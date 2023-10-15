@@ -3,165 +3,312 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <title>Grupo 2 Tarjeta Gráfica</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
-    <title>grupo 2</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="bg-dark">
-    <header class="full_black">
-      <div class="header_in container"></div>
+  <body class="bg-dark text-white">
+    <header class="black">
+        <div class="header_in container">
+          <h1>Tarjeta Gráfica</h1>
+        </div>
     </header>
     <main class="container">
-      <h1>Tarjeta Grafica GPU</h1>
-      <p>
-        En resumen, una tarjeta gráfica, también conocida como GPU, es un
-        componente esencial en la mayoría de las computadoras modernas que se
-        utiliza para renderizar imágenes y realizar tareas relacionadas con el
-        procesamiento de gráficos. Su función principal es transformar datos en
-        imágenes visuales y enviarlas a un monitor para su visualización. Además
-        de permitir experiencias visuales más ricas en juegos y aplicaciones
-        gráficas, las tarjetas gráficas también son cruciales para acelerar la
-        decodificación de video, realizar cálculos paralelos en aplicaciones
-        científicas y de aprendizaje automático, y mucho más. En resumen, las
-        tarjetas gráficas mejoran significativamente el rendimiento y la calidad
-        visual de las computadoras y son esenciales para una amplia variedad de
-        aplicaciones y usos en la informática moderna
-      </p>
-
-      <br />
-      <div class="img_cont">
-        <img src="images/Captura.PNG" alt="Descripción de la imagen" />
-      </div>
-      <br />
-      <p>
-        El recorrido de la información a través del PCI (Interconexión de
-        Componentes Periféricos) y los componentes relacionados es esencial en
-        una tarjeta gráfica:
-      </p>
       <div>
         <div>
-          <h2>Entrada de Voltaje:</h2>
-          <p>
-            La tarjeta gráfica recibe energía eléctrica a través de un conector
-            de alimentación, que proporciona la energía necesaria para el
-            funcionamiento de la GPU y otros componentes.
-          </p>
         </div>
-        <div>
-          <h2>Controlador del PCI</h2>
+        <div class="text_and_image container">
           <p>
-            El controlador del PCI gestiona la comunicación entre la tarjeta
-            gráfica y la placa madre de la computadora a través de la interfaz
-            PCI Express (PCIe). Facilita la transferencia de datos entre la GPU
-            y otros dispositivos conectados al bus PCIe.
+            La tarjeta gráfica, también conocida como GPU (Unidad de
+            Procesamiento Gráfico), es un componente esencial en la mayoría de
+            los sistemas informáticos modernos, especialmente en computadoras
+            diseñadas para juegos, diseño gráfico, edición de video y otras
+            tareas relacionadas con el procesamiento de gráficos. Su función
+            principal es renderizar imágenes y enviarlas a un dispositivo de
+            visualización, como un monitor.
           </p>
-        </div>
-        <div>
-          <h2>VRAM (Memoria de Video)</h2>
-          <p>
-            La VRAM es una memoria dedicada en la tarjeta gráfica utilizada para
-            almacenar datos de gráficos y texturas. Proporciona acceso rápido a
-            los datos necesarios para renderizar imágenes y videos con
-            eficiencia.
-          </p>
-        </div>
-        <div>
-          <h2>GPU (Unidad de Procesamiento Gráfico):</h2>
-          <p>
-            La GPU es el núcleo de procesamiento principal de la tarjeta
-            gráfica. Realiza cálculos y tareas relacionadas con la
-            representación de gráficos, como renderizado y procesamiento de
-            imágenes.
-          </p>
-        </div>
-        <div>
-          <h2>Interfaz de Salida</h2>
-          <p>
-            : La interfaz de salida de la tarjeta gráfica se compone de diversos
-            tipos de puertos, como HDMI, DisplayPort o DVI, que permiten
-            conectar la tarjeta a un monitor o dispositivo de visualización
-            externo.
-          </p>
-        </div>
-        <div>
-          <h2>Conector Cooler</h2>
-          <p>
-            El conector cooler está conectado al ventilador de la tarjeta
-            gráfica. Este ventilador tiene la función de disipar el calor
-            generado por la GPU durante su funcionamiento para evitar el
-            sobrecalentamiento y mantener la temperatura en niveles seguros.
-          </p>
-        </div>
-        <div>
-          <h2>Chip Integrado Cooler</h2>
-          <p>
-            El chip integrado en la tarjeta gráfica controla el funcionamiento
-            del ventilador o cooler. Monitorea la temperatura de la GPU y regula
-            la velocidad del ventilador para mantenerla dentro de los límites
-            seguros.
-          </p>
+          <div class="images_center">
+            <img src="images/tg1.PNG" alt="" />
+          </div>
         </div>
       </div>
-      <figure class="img_cont">
-        <img src="images/drivers.png" />
-      </figure>
-      <p>
-        El decodificador recibe datos de vídeo cifrados y comprimidos de una
-        fuente externa, junto con una clave criptográfica. Para acelerar la
-        descodificación, el contenido se envía a una GPU, pero antes de hacerlo,
-        el decodificador lo recifra, generalmente usando AES-CTR, y establece un
-        mecanismo de intercambio de claves con el controlador de gráficos. Los
-        fotogramas de vídeo descifrados se almacenan en la memoria de vídeo sin
-        cifrar. Los fotogramas se procesan y luego se pueden presentar de dos
-        maneras: mediante superposición de hardware o administración de ventanas
-        de escritorio. Finalmente, se muestra el fotograma en el monitor, y se
-        pueden implementar medidas de protección de vínculos, como
-        High-Bandwidth Protección de contenido digital, para garantizar la
-        seguridad de la transmisión de vídeo.
-      </p>
-      <br />
-      <div class="img_cont text-white">
-        <img src="images/drivers2.png" />
-      </div>
-      <p>
-        En conjunto, estos componentes permiten que la tarjeta gráfica funcione
-        de manera eficiente, entregando imágenes y gráficos de alta calidad a
-        través de la interfaz de salida hacia un monitor o pantalla, mientras se
-        mantiene la temperatura adecuada mediante la regulación del ventilador.
-        Esto es fundamental para garantizar un rendimiento óptimo y una larga
-        vida útil de la tarjeta gráfica
-      </p>
       <div>
-        <h4>Bibliografía</h4>
+        <div>
+          <h3>Funciones principales de la tarjeta gráfica</h3>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <h4>Renderizar imágenes:</h4>
+              <p>
+                Es la tarea principal de la GPU. Transforma datos en imágenes
+                visuales. En videojuegos, la GPU es responsable de renderizar
+                los gráficos en tiempo real.
+              </p>
+            </li>
+            <li>
+              <h4>Decodificación y codificación de video:</h4>
+              <p>
+                Las GPUs modernas pueden acelerar la reproducción de video y
+                ayudar en la edición y codificación de video.
+              </p>
+            </li>
+            <li>
+              <h4>Cálculos paralelos:</h4>
+              <p>
+                Las GPUs están diseñadas para realizar múltiples cálculos al
+                mismo tiempo. Esto las hace ideales para tareas que se pueden
+                paralelizar, como simulaciones científicas, aprendizaje
+                automático, minería de criptomonedas,etc.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>Tipos de tarjetas gráficas:</h3>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <h4>Integradas:</h4>
+              <p>
+                Estas tarjetas gráficas están integradas directamente en el
+                procesador o en la placa base de la computadora. No tienen su
+                proAM (Memopio VRria de Video) dedicado y suelen usar una
+                porción de la RAM del sistema.El efecto de visualización y el
+                rendimiento de procesamiento de la tarjeta gráfica integrada son
+                relativamente débiles y no se pueden realizar actualizaciones de
+                hardware de la tarjeta gráfica.Las ventajas de los gráficos
+                integrados son el bajo consumo de energía y el bajo
+                calor.Ejemplos incluyen Intel HD Graphics y algunos chips
+                gráficos de AM
+              </p>
+            </li>
+            <li>
+              <h4>Dedicadas o discretas:</h4>
+              <p>
+                Son tarjetas físicamente separadas que se instalan en la placa
+                base. Tienen su propio VRAM y son generalmente más potentes que
+                las tarjetas integradas. NVIDIA y AMD son los principales
+                fabricantes de estas tarjetas.
+              </p>
+            </li>
+            <li>
+              <h4>Tarjetas profesionales o de estación de trabajo:</h4>
+              <p>
+                Están diseñadas específicamente para tareas de computación de
+                alto rendimiento como diseño CAD (Diseño Asistido por
+                Computadora), animación 3D, edición de video y simulaciones
+                científicas. Al seleccionar una tarjeta gráfica, es importante
+                considerar el uso previsto. Si solo necesitas una computadora
+                para tareas básicas como navegación web, correo electrónico y
+                procesamiento de texto, una GPU integrada podría ser suficiente.
+                Pero si estás interesado en juegos, diseño gráfico o edición de
+                video, probablemente querrás una tarjeta gráfica dedicada.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2>Conclusión</h2>
+        </div>
+        <div>
+          <p>
+            En resumen, una tarjeta gráfica, también conocida como GPU, es un
+            componente esencial en la mayoría de las computadoras modernas que
+            se utiliza para renderizar imágenes y realizar tareas relacionadas
+            con el procesamiento de gráficos. Su función principal es
+            transformar datos en imágenes visuales y enviarlas a un monitor para
+            su visualización. Además de permitir experiencias visuales más ricas
+            en juegos y aplicaciones gráficas, las tarjetas gráficas también son
+            cruciales para acelerar la decodificación de video, realizar
+            cálculos paralelos en aplicaciones científicas y de aprendizaje
+            automático, y mucho más. En resumen, las tarjetas gráficas mejoran
+            significativamente el rendimiento y la calidad visual de las
+            computadoras y son esenciales para una amplia variedad de
+            aplicaciones y usos en la informática moderna.
+          </p>
+        </div>
+        <div>
+          <h3>Recorrido de la información</h3>
+        </div>
+        <div>
+          <p>
+            El recorrido de la información a través del PCI (Interconexión de
+            Componentes Periféricos) y los componentes relacionados es esencial
+            en una tarjeta gráfica:
+          </p>
+        </div>
+        <div class="images_center">
+          <img src="images/estructuraTG.PNG" alt="" />
+        </div>
+        <div>
+          <ol>
+            <li>
+              <h4>Entrada de Voltaje:</h4>
+              <p>
+                La tarjeta gráfica recibe energía eléctrica a través de un
+                conector de alimentación, que proporciona la energía necesaria
+                para el funcionamiento de la GPU y otros componentes.
+              </p>
+            </li>
+            <li>
+              <h4>Controlador del PCI:</h4>
+              <p>
+                El controlador del PCI gestiona la comunicación entre la tarjeta
+                gráfica y la placa madre de la computadora a través de la
+                interfaz PCI Express (PCIe). Facilita la transferencia de datos
+                entre la GPU y otros dispositivos conectados al bus PCIe.
+              </p>
+            </li>
+            <li>
+              <h4>VRAM (Memoria de Video):</h4>
+              <p>
+                La VRAM es una memoria dedicada en la tarjeta gráfica utilizada
+                para almacenar datos de gráficos y texturas. Proporciona acceso
+                rápido a los datos necesarios para renderizar imágenes y videos
+                con eficiencia.
+              </p>
+            </li>
+            <li>
+              <h4>GPU (Unidad de Procesamiento Gráfico):</h4>
+              <p>
+                La GPU es el núcleo de procesamiento principal de la tarjeta
+                gráfica. Realiza cálculos y tareas relacionadas con la
+                representación de gráficos, como renderizado y procesamiento de
+                imágenes.
+              </p>
+            </li>
+            <li>
+              <h4>Interfaz de Salida:</h4>
+              <p>
+                La interfaz de salida de la tarjeta gráfica se compone de
+                diversos tipos de puertos, como HDMI, DisplayPort o DVI, que
+                permiten conectar la tarjeta a un monitor o dispositivo de
+                visualización externo.
+              </p>
+            </li>
+            <li>
+              <h4>Conector Cooler:</h4>
+              <p>
+                El conector cooler está conectado al ventilador de la tarjeta
+                gráfica. Este ventilador tiene la función de disipar el calor
+                generado por la GPU durante su funcionamiento para evitar el
+                sobrecalentamiento y mantener la temperatura en niveles seguros.
+              </p>
+            </li>
+            <li>
+              <h4>Chip Integrado Cooler:</h4>
+              <p>
+                El chip integrado en la tarjeta gráfica controla el
+                funcionamiento del ventilador o cooler. Monitorea la temperatura
+                de la GPU y regula la velocidad del ventilador para mantenerla
+                dentro de los límites seguros.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>Ejemplo del flujo del controlador de video Direct3D</h3>
+        </div>
+        <div class="images_center">
+          <img src="images/videoDirect3D.PNG" alt="" />
+        </div>
+        <div>
+          <p>
+            El decodificador recibe datos de vídeo cifrados y comprimidos de una
+            fuente externa, junto con una clave criptográfica. <br />
+            Para acelerar la descodificación, el contenido se envía a una GPU,
+            pero antes de hacerlo, el decodificador lo recifra, generalmente
+            usando AES-CTR, y establece un mecanismo de intercambio de claves
+            con el controlador de gráficos.<br />
+            Los fotogramas de vídeo descifrados se almacenan en la memoria de
+            vídeo sin cifrar. <br />
+            Los fotogramas se procesan y luego se pueden presentar de dos
+            maneras: mediante superposición de hardware o administración de
+            ventanas de escritorio. <br />
+            Finalmente, se muestra el fotograma en el monitor, y se pueden
+            implementar medidas de protección de vínculos, como High-Bandwidth
+            Protección de contenido digital, para garantizar la seguridad de la
+            transmisión de vídeo.
+          </p>
+        </div>
+        <div class="images_center">
+          <img src="images/sv.PNG" alt="" />
+        </div>
+        <div>
+          <p>
+            En conjunto, estos componentes permiten que la tarjeta gráfica
+            funcione de manera eficiente, entregando imágenes y gráficos de alta
+            calidad a través de la interfaz de salida hacia un monitor o
+            pantalla, mientras se mantiene la temperatura adecuada mediante la
+            regulación del ventilador. Esto es fundamental para garantizar un
+            rendimiento óptimo y una larga vida útil de la tarjeta gráfica
+          </p>
+        </div>
       </div>
     </main>
-    <!--Ondas encima del footer-->
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#000000"
-        fill-opacity="1"
-        d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,160C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-      ></path>
-    </svg>
-
-    <footer class="full_black">
-      <div class="footer_in container">
-        <div class="footer_integrantes text-white">
-          <li>Juan Guerrero |</li>
-          <li>Luciano Losada |</li>
-          <li>Uriel Herrera |</li>
-          <li>Gabriel Kitanovich |</li>
-          <li>Julián Ortega</li>
+        <path
+          fill="#000000"
+          fill-opacity="1"
+          d="M0,160L80,181.3C160,203,320,245,480,240C640,235,800,181,960,160C1120,139,1280,149,1360,154.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
+    <footer class="black" >
+      <div class="container footer_info">
+        <div class="bibliografia">
+          <h3>Bibliografía</h3>
+          <ul>
+            <li>
+              <a
+                href="https://masterenciberseguridadonline.es/componentes-de-una-tarjeta-grafica/"
+                >Componentes de una Tarjeta Gráfica</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.jakelectronics.com/blog/graphics-card-explained-classification-working-and-structure"
+                >Graphics Card Explained: Classification, Working, and
+                Structure</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://learn.microsoft.com/es-es/windows/win32/medfound/gpu-based-content-protection"
+                >GPU-Based Content Protection</a
+              >
+            </li>
+            <li>
+              <a href="https://es.wikipedia.org/wiki/Tarjeta_gr%C3%A1fica"
+                >Tarjeta Gráfica - Wikipedia</a
+              >
+            </li>
+            <li>Uso de IAs para filtrar información.</li>
+          </ul>
+        </div>
+        <div class="integrantes">
+          <h3>Integrantes</h3>
+          <ul>
+            <li>Juan Guerrero</li>
+            <li>Luciano Losada</li>
+            <li>Uriel Dardo</li>
+            <li>Julián Ortega</li>
+            <li>Gabriel Kitanovich</li>
+          </ul>
         </div>
       </div>
     </footer>
   </body>
-  <script src="./main.js"></script>
 </html>
