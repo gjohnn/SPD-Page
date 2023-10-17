@@ -3,8 +3,15 @@
     src: url("/fontsAndStuff/giver_made/Giver\ Made\ Italic.ttf");
 }
 
+div{
+    display: unset;
+}
+
 header{
-    height: 125px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    padding: 0;
 }
 .header_in{
     height: 130px;
@@ -23,12 +30,12 @@ header{
     text-decoration: none;
     color: grey;
 }
-.header_in > nav :hover{
+.header_in > nav >a:hover{
     color: white;
 }
 
 main{
-    margin-top: 10px;
+    margin-top: 150px;
 }
 
 .footer_info{
@@ -65,5 +72,6 @@ footer > div{
 .images_center{
     display: flex;
     justify-content: center;
+    margin: 5px 0px 10px 0px;
 }
   
