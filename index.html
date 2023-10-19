@@ -12,22 +12,20 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="bg-dark text-white">
-    <header class="black">
-      <div
-        data-aos="zoom-out-up"
-        data-aos-duration="1300"
-        class="header_in container"
-      >
-        <h1>Tarjeta Gráfica</h1>
-        <nav>
-          <a href="#funciones">Funciones</a>
-          <a href="#tipos">Tipos</a>
-          <a href="#conclusion">Conclusion</a>
-          <a href="#recorrido">Recorrido de la información</a>
-        </nav>
+    <header id="miHeader" class="black">
+      <div class="header_in container">
+          <h1 id="logo" data-aos="zoom-in" data-aos-duration="1500">Tarjeta Gráfica</h1>
+          <nav>
+            <a data-aos="fade-right" data-aos-duration="1500" href="#funciones">Funciones</a>
+            <a data-aos="fade-right" data-aos-duration="1500" href="#tipos">Tipos</a>
+            <a data-aos="fade-left" data-aos-duration="1500" href="#conclusion">Conclusion</a>
+            <a data-aos="fade-left" data-aos-duration="1500" href="#recorrido">Recorrido de la información</a>
+        </div>
       </div>
     </header>
     <main class="container">
@@ -47,7 +45,7 @@
           </div>
         </div>
       </div>
-      <div data-aos="fade-right" data-aos-duration="2000">
+      <div>
         <div>
           <h3 id="funciones">Funciones principales de la tarjeta gráfica</h3>
         </div>
@@ -81,7 +79,7 @@
         </div>
       </div>
       <div>
-        <div data-aos="fade-right" data-aos-duration="2000">
+        <div>
           <h3 id="tipos">Tipos de tarjetas gráficas:</h3>
           <ul>
             <li>
@@ -125,8 +123,8 @@
           </ul>
         </div>
       </div>
-      <div >
-        <div data-aos="fade-right" data-aos-duration="2000">
+      <div>
+        <div >
           <h2 id="conclusion">Conclusión</h2>
           <p>
             En resumen, una tarjeta gráfica, también conocida como GPU, es un
@@ -144,7 +142,7 @@
             aplicaciones y usos en la informática moderna.
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000">
+        <div >
           <h3 id="recorrido">Recorrido de la información</h3>
           <p>
             El recorrido de la información a través del PCI (Interconexión de
@@ -155,7 +153,7 @@
         <div class="images_center">
           <img src="images/estructuraTG.PNG" alt="" />
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000">
+        <div >
           <ol>
             <li>
               <h4>Entrada de Voltaje:</h4>
@@ -223,13 +221,13 @@
         </div>
       </div>
       <div>
-        <div data-aos="fade-right" data-aos-duration="2000">
-          <h3 >Ejemplo del flujo del controlador de video Direct3D</h3>
+        <div >
+          <h3>Ejemplo del flujo del controlador de video Direct3D</h3>
         </div>
         <div class="images_center">
           <img src="images/videoDirect3D.PNG" alt="" />
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000">
+        <div >
           <p>
             El decodificador recibe datos de vídeo cifrados y comprimidos de una
             fuente externa, junto con una clave criptográfica. <br />
@@ -251,7 +249,7 @@
         <div class="images_center">
           <img src="images/sv.PNG" alt="" />
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000">
+        <div >
           <p>
             En conjunto, estos componentes permiten que la tarjeta gráfica
             funcione de manera eficiente, entregando imágenes y gráficos de alta
@@ -263,6 +261,8 @@
         </div>
       </div>
     </main>
+    <button id="btnScrollToTop" class="scroll-to-top">↑</button>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#000000"
@@ -314,7 +314,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/main.js"></script>
     <script>
       AOS.init();
     </script>
